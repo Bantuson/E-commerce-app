@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - TechVibe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h2 class="logo">Techvibe</h2>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+                <li>
+                    <a href="cart.html" class="cart-link">
+                        Cart (<span id="cart-count">0</span>)
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1 class="page-title">Contact Us</h1>
+
+        <div class="contact-container">
+            <div class="contact-form-section">
+                <h2>Get in Touch</h2>
+                <p>Have a question or feedback? We would love to hear from you!</p>
+
+                <form id="contact-form" onsubmit="handleContactForm(event)">
+                    <div class="form-group">
+                        <label for="contact-name">Name *</label>
+                        <input type="text" id="contact-name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-email">Email *</label>
+                        <input type="email" id="contact-email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-subject">Subject *</label>
+                        <input type="text" id="contact-subject" name="subject" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-message">Message *</label>
+                        <textarea id="contact-message" name="message" rows="6" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact-info-section">
+                <h2>Contact Information</h2>
+
+                <div class="info-item">
+                    <h3>Phone</h3>
+                    <p>+27 11 123 4567</p>
+                </div>
+
+                <div class="info-item">
+                    <h3>Email</h3>
+                    <p>support@techvibe.co.za</p>
+                </div>
+
+                <div class="info-item">
+                    <h3>Address</h3>
+                    <p>123 Tech Street<br>
+                    Sandton, Johannesburg<br>
+                    Gauteng, 2196<br>
+                    South Africa</p>
+                </div>
+
+                <div class="info-item">
+                    <h3>Business Hours</h3>
+                    <p>Monday - Friday: 9:00 AM - 6:00 PM<br>
+                    Saturday: 10:00 AM - 4:00 PM<br>
+                    Sunday: Closed</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 TechVibe. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

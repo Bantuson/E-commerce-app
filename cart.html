@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - TechVibe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">TechVibe</a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="contact.html">Contact</a>
+                <a href="cart.html" class="cart-link active">
+                    Cart <span id="cart-count" class="cart-badge">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1 class="page-title">Shopping Cart</h1>
+
+        <div class="cart-container">
+            <div class="cart-items-section">
+                <div id="cart-items"></div>
+            </div>
+
+            <div class="cart-summary-section">
+                <div id="cart-summary" class="cart-summary-card"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 TechVibe. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
